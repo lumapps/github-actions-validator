@@ -1,0 +1,39 @@
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: lumapps/github-actions-validator@0.1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.7'
+    - name: Cache pip
+      uses: actions/cache@v2
+      with:
+        path: venv
+        key: pip-v1-${{ hashFiles('dev-requirements.txt') }}
+        restore-keys: |
+          pip-v1-
+    - name: Cache pre-commit
+      uses: actions/cache@v2
+      with:
+        path: /tmp/pre-commit-cache
+        key: pre-commit-v1-{{ hashFiles('.pre-commit-config.yaml') }}
+        restore-keys: |
+          pre-commit-v1-
+    - name: Install dependencies
+      run: make sync
+    - uses: fusion-engineering/setup-git-credentials@aad2afbbaa460710a4d2594590b4e9d4eb004720
+      with:
+        credentials: https://lumbot:${{ secrets.GITBOT_TOKEN }}@github.com/
+    - name: Run the pre-commit hooks
+      run: make pre_commit.run
+      env:
+        PRE_COMMIT_HOME: /tmp/pre-commit-cache
