@@ -1,0 +1,9 @@
+name: 'GitHub Actions validator'
+description: 'Greet someone'
+
+runs-on: ubuntu-latest
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/src/ga_actions_check_ref.py
+      shell: bash
