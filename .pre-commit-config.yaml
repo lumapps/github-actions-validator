@@ -1,0 +1,57 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+---
+default_language_version:
+  python: python3.7
+
+default_stages: [commit]
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+  - id: trailing-whitespace
+    exclude: .github/CODEOWNERS
+    stages: ["commit"]
+  - id: end-of-file-fixer
+    stages: ["commit"]
+  - id: check-yaml
+    args:
+      - --allow-multiple-documents
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-executables-have-shebangs
+    stages: ["commit"]
+  - id: check-merge-conflict
+
+- repo: meta
+  hooks:
+    - id: check-useless-excludes
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: d6e31ae  # v0.782
+  hooks:
+    - id: mypy
+      args: [--config=./setup.cfg]
+      types: ["python"]
+- repo: local
+  hooks:
+    - id: black
+      name: black
+      language: system
+      entry: venv/bin/black --check
+      types: [ "python" ]
+
+    - id: isort
+      name: isort
+      language: system
+      entry: venv/bin/isort --check-only --diff
+      types: ["python"]
+
+    - id: pylint
+      name: pylint
+      language: system
+      entry: venv/bin/pylint
+      require_serial: true
+      args:
+        - "-j 0"
+      types: ["python"]

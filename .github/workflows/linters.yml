@@ -1,0 +1,33 @@
+name: "CI: Linters"
+
+on:
+  pull_request:
+
+jobs:
+  linters:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.7'
+    - name: Cache pip
+      uses: actions/cache@v2
+      with:
+        path: venv
+        key: pip-v1-${{ hashFiles('dev-requirements.txt') }}
+        restore-keys: |
+          pip-v1-
+    - name: Cache pre-commit
+      uses: actions/cache@v2
+      with:
+        path: /tmp/pre-commit-cache
+        key: pre-commit-v1-{{ hashFiles('.pre-commit-config.yaml') }}
+        restore-keys: |
+          pre-commit-v1-
+    - name: Install dependencies
+      run: make sync
+    - name: Run the pre-commit hooks
+      run: make lint
+      env:
+        PRE_COMMIT_HOME: /tmp/pre-commit-cache
