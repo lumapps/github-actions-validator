@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import glob
+import os
 import re
 import sys
 from dataclasses import dataclass, field
@@ -69,7 +70,9 @@ def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bo
 
 
 def load_allowed_actions() -> Mapping[str, str]:
-    with open("./ALLOWED_ACTIONS.yaml", mode="r") as file:
+    with open(
+        f"{os.environ['GITHUB_ACTION_PATH']}/ALLOWED_ACTIONS.yaml", mode="r"
+    ) as file:
         return yaml.safe_load(file)
 
 

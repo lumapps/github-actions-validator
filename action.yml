@@ -7,5 +7,5 @@ runs:
   steps:
     - run: pip install -qr ${{ github.action_path }}/requirements.in
       shell: bash
-    - run: ${{ github.action_path }}/src/ga_actions_check_ref.py
+    - run: $GITHUB_ACTION_PATH/src/ga_actions_check_ref.py
       shell: bash
