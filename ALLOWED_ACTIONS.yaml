@@ -11,7 +11,7 @@ ffurrer2/extract-release-notes: 72ce6a57083368f4a785f875a52eb972255823fc  # v1.7
 fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b42814d  # v2.0.6
 google-github-actions/deploy-appengine: 2906c455f0ddd438509bfb2e9f995ef5092cee21  # v0.3.1
 google-github-actions/setup-gcloud: daadedc81d5f9d3c06d2c92f49202a3cc2b919ba  # v0.2.1
-harupy/comment-on-pr: d83982f39ec865c951b0d1ad0e9e0d79d801e790  # v1
+harupy/comment-on-pr: dcff01407df59b61be9db68aeb3d1c6ddb21a3c0  # v0.1.0
 juanigalan91/monorepolyser: a1e73cb59ed778fe42041b6ea4cd9aae06042ffa  # 0.2.6
 khan/pull-request-comment-trigger: af6260d48c05e1f2f1641f9d14794bd04687c023  # 1.0.0
 marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888  # v2.1.0
