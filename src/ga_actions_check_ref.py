@@ -11,7 +11,7 @@ from jsonpath_ng import parse
 
 ALLOWED_ORGANIZATIONS = ["actions", "lumapps"]
 GITHUB_ACTIONS_PATTERN = re.compile(
-    r"^(?P<owner>[A-Za-z0-9_.-]+)\/(?P<repository>[A-Za-z0-9_.-]+)@(?P<reference>.*)$"
+    r"^(?P<owner>[A-Za-z0-9][A-Za-z0-9_.-]*)\/(?P<repository>[A-Za-z0-9_.-]+)@(?P<reference>.*)$"
 )
 
 SHA1_PATTERN = re.compile(r"^[a-f0-9]{40}$")
@@ -32,14 +32,16 @@ def find_gitub_actions_in_workflow(file: IO) -> List[GithubActions]:
     github_actions = []
     jsonpath_expr = parse("jobs.*.steps[*].uses")
     for actions in [match.value for match in jsonpath_expr.find(yaml.safe_load(file))]:
-        match = re.match(GITHUB_ACTIONS_PATTERN, actions).groupdict()  # type: ignore
-        github_actions.append(
-            GithubActions(
-                owner=match["owner"],
-                repository=match["repository"],
-                reference=match["reference"],
+        match = re.match(GITHUB_ACTIONS_PATTERN, actions)
+        if match:
+            actions_metadata = match.groupdict()
+            github_actions.append(
+                GithubActions(
+                    owner=actions_metadata["owner"],
+                    repository=actions_metadata["repository"],
+                    reference=actions_metadata["reference"],
+                )
             )
-        )
 
     return github_actions
 
