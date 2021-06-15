@@ -31,7 +31,8 @@ dev-requirements.txt: venv requirements.in dev-requirements.in
 		requirements.in dev-requirements.in
 
 format:
-	black src && isort src
+	black src/ tests/
+	isort src/ tests/
 
 lint:
 	pre-commit run -a
