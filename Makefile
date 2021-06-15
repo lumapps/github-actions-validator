@@ -3,6 +3,8 @@ SHELL:=/bin/bash
 # Use python executables inside venv
 export PATH := ./venv/bin:$(PATH)
 
+.PHONY: tests
+
 init: sync
 	pre-commit install  # installs pre-commit hooks
 
@@ -36,3 +38,6 @@ format:
 
 lint:
 	pre-commit run -a
+
+tests:
+	pytest -xv tests
