@@ -1,0 +1,19 @@
+name: "Workflow Sample"
+
+on:
+  pull_request:
+
+jobs:
+  rebase:
+    name: Rebase
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check the commits message
+        uses: lumapps/commit-message-validator@master
+      - name: Automatic Rebase
+        uses: cirrus-actions/rebase@c473b716e3fcde0c6bf67416e2c2882830ad40f6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Trigger lint_and_plan workflow
+        uses: ./.github/actions/local-actions
