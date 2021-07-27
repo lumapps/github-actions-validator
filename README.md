@@ -38,5 +38,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: lumapps/github-actions-validator@0.0.2
+    - uses: lumapps/github-actions-validator@v1
 ```
