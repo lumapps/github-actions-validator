@@ -4,7 +4,7 @@ MeilCli/slack-upload-file: f8f4f6dbe44bb99b36c16a2774836022ffe56fed  # v1.4.1
 andymckay/cancel-action: 8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8  # 0.2
 archive/github-actions-slack: 4dc5ae7261db84cd53ed06b4731a0ec776e856d9  # v2.2.1
 benjlevesque/short-sha: 56c9032868f85fc82058ff0793e58ab97bb2b856  # v1.2
-chromaui/action: 5c36690a7d85fc6345aa786cc5b3d3d9742af4fb  # v1
+chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
 cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
 docker/login-action: 28218f9b04b4f3f62068d7b6ce6ca5b26e35336c  # v1.9.0
