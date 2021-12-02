@@ -21,6 +21,7 @@ peter-evans/repository-dispatch: ce5485de42c9b2622d2ed064be479e8ed65e76f4  # v1.
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 65194d8015be7624d231796ddee1cd52a5023cb3  # v2.6
 thomaseizinger/create-pull-request: 708b87f1bf8075327bd126082bb2430020bab194  # 1.0.0
+uesteibar/reviewer-lottery: 5531ef7fe55d814c8f8fbab12de4ff74d15b41ed  # v2
 webfactory/ssh-agent: cb8b21017acfd319f0f4eb320ae495f22c36d0a7  # v0.5.2
 wzieba/Firebase-Distribution-Github-Action: d6e3b20d53da54e1ffd2082a8132e120b5bd1bb2  # v1.3.2
 xt0rted/pull-request-comment-branch: f2f07162618551540507cbd00ddf16ffcaa0c72f  # v1.3.0
