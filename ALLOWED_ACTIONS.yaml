@@ -13,7 +13,7 @@ fkirc/skip-duplicate-actions: f75dd6564bb646f95277dc8c3b80612e46a4a1ea  # v3.4.1
 fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b42814d  # v2.0.6
 google-github-actions/deploy-appengine: 2906c455f0ddd438509bfb2e9f995ef5092cee21  # v0.3.1
 google-github-actions/setup-gcloud: daadedc81d5f9d3c06d2c92f49202a3cc2b919ba  # v0.2.1
-juanigalan91/monorepolyser: ad505dbd8da5e0aaaa895be5344c75ae46ca227f  # 0.2.8
+juanigalan91/monorepolyser: 658a8d4ee21c0bc6bbba17f74b0a7e7716a54cdf  # 0.2.9
 khan/pull-request-comment-trigger: af6260d48c05e1f2f1641f9d14794bd04687c023  # 1.0.0
 marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888  # v2.1.0
 peter-evans/create-or-update-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
