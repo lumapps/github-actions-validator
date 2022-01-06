@@ -64,3 +64,10 @@ repos:
         args:
           - "-j 0"
         types: ["python"]
+
+      - id: allowed_actions_sort
+        name: Sorting for allowed actions
+        language: system
+        entry: sort -f -c ALLOWED_ACTIONS.yaml
+        pass_filenames: false
+        always_run: true
