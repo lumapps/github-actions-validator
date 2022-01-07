@@ -9,7 +9,7 @@ chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
 codecov/codecov-action: f32b3a3741e1053eb607407145bc9619351dc93b  # v2.1.0
 cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
-docker/build-push-action: a66e35b9cbcf4ad0ea91ffcaf7bbad63ad9e0229. # v2
+docker/build-push-action: a66e35b9cbcf4ad0ea91ffcaf7bbad63ad9e0229 # v2
 docker/login-action: 28218f9b04b4f3f62068d7b6ce6ca5b26e35336c  # v1.9.0
 docker/setup-buildx-action: 94ab11c41e45d028884a99163086648e898eed25  # v1
 ffurrer2/extract-release-notes: 72ce6a57083368f4a785f875a52eb972255823fc  # v1.7.0
