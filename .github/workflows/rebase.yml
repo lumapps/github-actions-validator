@@ -1,0 +1,19 @@
+on:
+  issue_comment:
+    types:
+      - created
+name: Automatic Rebase
+jobs:
+  rebase:
+    name: Rebase
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/rebase')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.FUSIONY_TOKEN }}
+          fetch-depth: 0
+      - name: Automatic Rebase
+        uses: cirrus-actions/rebase@c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
+        env:
+          GITHUB_TOKEN: ${{ secrets.FUSIONY_TOKEN }}
