@@ -31,3 +31,4 @@ uesteibar/reviewer-lottery: 5531ef7fe55d814c8f8fbab12de4ff74d15b41ed  # v2
 webfactory/ssh-agent: cb8b21017acfd319f0f4eb320ae495f22c36d0a7  # v0.5.2
 wzieba/Firebase-Distribution-Github-Action: d6e3b20d53da54e1ffd2082a8132e120b5bd1bb2  # v1.3.2
 xt0rted/pull-request-comment-branch: f2f07162618551540507cbd00ddf16ffcaa0c72f  # v1.3.0
+ncipollo/release-action: 40bb172bd05f266cf9ba4ff965cb61e9ee5f6d01 # 1.9.0
