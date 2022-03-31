@@ -18,6 +18,7 @@ fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b4281
 google-github-actions/deploy-appengine: 2906c455f0ddd438509bfb2e9f995ef5092cee21  # v0.3.1
 google-github-actions/setup-gcloud: daadedc81d5f9d3c06d2c92f49202a3cc2b919ba  # v0.2.1
 juanigalan91/monorepolyser: 658a8d4ee21c0bc6bbba17f74b0a7e7716a54cdf  # 0.2.9
+kanga333/comment-hider: bbdf5b562fbec24e6f60572d8f712017428b92e0 # v0.3.0
 khan/pull-request-comment-trigger: af6260d48c05e1f2f1641f9d14794bd04687c023  # 1.0.0
 marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888  # v2.1.0
 ncipollo/release-action: 40bb172bd05f266cf9ba4ff965cb61e9ee5f6d01  # 1.9.0
