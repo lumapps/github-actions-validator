@@ -12,6 +12,7 @@ cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
 docker/build-push-action: a66e35b9cbcf4ad0ea91ffcaf7bbad63ad9e0229 # v2
 docker/login-action: 28218f9b04b4f3f62068d7b6ce6ca5b26e35336c  # v1.9.0
 docker/setup-buildx-action: 94ab11c41e45d028884a99163086648e898eed25  # v1
+dorny/paths-filter: b2feaf19c27470162a626bd6fa8438ae5b263721 #2.10.2
 ffurrer2/extract-release-notes: 72ce6a57083368f4a785f875a52eb972255823fc  # v1.7.0
 fkirc/skip-duplicate-actions: f75dd6564bb646f95277dc8c3b80612e46a4a1ea  # v3.4.1
 fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b42814d  # v2.0.6
