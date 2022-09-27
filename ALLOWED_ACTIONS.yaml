@@ -1,4 +1,5 @@
 8398a7/action-slack: dcc8c8e9dd8802e21a712dc0c003db97b42efe43  # v3.9.1
+FirebaseExtended/action-hosting-deploy: 276388dd6c2cde23455b30293105cc866c22282d  # v0
 Ilshidur/action-slack: 689ad44a9c9092315abd286d0e3a9a74d31ab78a  # 2.1.0
 MeilCli/slack-upload-file: f7cae93b491fd216ce4f9dae606e96b18d1b0518  # v1.4.15
 ad-m/github-push-action: 40bf560936a8022e68a3c00e7d2abefaf01305a6  # v0.6.0
