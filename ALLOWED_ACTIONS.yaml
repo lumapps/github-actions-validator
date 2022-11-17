@@ -1,7 +1,7 @@
 8398a7/action-slack: dcc8c8e9dd8802e21a712dc0c003db97b42efe43  # v3.9.1
 FirebaseExtended/action-hosting-deploy: 276388dd6c2cde23455b30293105cc866c22282d  # v0
 Ilshidur/action-slack: 689ad44a9c9092315abd286d0e3a9a74d31ab78a  # 2.1.0
-MeilCli/slack-upload-file: f7cae93b491fd216ce4f9dae606e96b18d1b0518  # v1.4.15
+MeilCli/slack-upload-file: fc3d207751bff0393a4e2dd5ecca7ac3eea9b309  # v2.1.2
 ad-m/github-push-action: 40bf560936a8022e68a3c00e7d2abefaf01305a6  # v0.6.0
 andymckay/cancel-action: 8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8  # 0.2
 archive/github-actions-slack: 4dc5ae7261db84cd53ed06b4731a0ec776e856d9  # v2.2.1
@@ -10,6 +10,7 @@ chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
 codecov/codecov-action: f32b3a3741e1053eb607407145bc9619351dc93b  # v2.1.0
 cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
+de-vri-es/setup-git-credentials: 162b9dfe472513ee2960f0c97dd3cbbe80319b68  # v2.0.10
 docker/build-push-action: a66e35b9cbcf4ad0ea91ffcaf7bbad63ad9e0229 # v2
 docker/login-action: 28218f9b04b4f3f62068d7b6ce6ca5b26e35336c  # v1.9.0
 docker/metadata-action: f206c36955d3cc6213c38fb3747d9ba4113e686a  # v4.0.0
