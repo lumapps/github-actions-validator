@@ -19,7 +19,7 @@ dorny/paths-filter: b2feaf19c27470162a626bd6fa8438ae5b263721  #2.10.2
 ffurrer2/extract-release-notes: 72ce6a57083368f4a785f875a52eb972255823fc  # v1.7.0
 fkirc/skip-duplicate-actions: f75dd6564bb646f95277dc8c3b80612e46a4a1ea  # v3.4.1
 fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b42814d  # v2.0.6
-google-github-actions/auth: ceee102ec2387dd9e844e01b530ccd4ec87ce955  # v0.8.0
+google-github-actions/auth: ef5d53e30bbcd8d0836f4288f5e50ff3e086997d  # v1.0.0
 google-github-actions/deploy-appengine: 2906c455f0ddd438509bfb2e9f995ef5092cee21  # v0.3.1
 google-github-actions/setup-gcloud: daadedc81d5f9d3c06d2c92f49202a3cc2b919ba  # v0.2.1
 google-github-actions/upload-cloud-storage: a42a4672297bff0f4a685fe7126e971ca1797559  # v0.10.2
