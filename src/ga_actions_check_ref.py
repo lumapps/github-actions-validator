@@ -4,10 +4,23 @@ import os
 import re
 import sys
 from dataclasses import dataclass, field
-from typing import IO, List, Mapping
+from typing import IO, Dict, Hashable, List, Mapping
 
 import yaml
 from jsonpath_ng import parse
+from yaml import MappingNode
+from yaml.loader import SafeLoader
+
+
+class SafeLineLoader(SafeLoader):
+    def construct_mapping(
+        self, node: MappingNode, deep: bool = False
+    ) -> Dict[Hashable, None]:
+        mapping = super().construct_mapping(node, deep=deep)
+        # Add 1 so line numbering starts at 1
+        mapping["line"] = node.start_mark.line + 1
+        return mapping
+
 
 ALLOWED_ORGANIZATIONS = ["actions", "lumapps"]
 GITHUB_ACTIONS_PATTERN = re.compile(
@@ -20,6 +33,7 @@ SHA1_PATTERN = re.compile(r"^[a-f0-9]{40}$")
 @dataclass
 class GithubActions:
     name: str = field(init=False)
+    line: int
     owner: str
     reference: str
     repository: str
@@ -31,8 +45,9 @@ class GithubActions:
 def find_gitub_actions_in_workflow(file: IO) -> List[GithubActions]:
     github_actions = []
     jsonpath_expr = parse("jobs.*.steps[*].uses")
-    for actions in [match.value for match in jsonpath_expr.find(yaml.safe_load(file))]:
-        match = re.match(GITHUB_ACTIONS_PATTERN, actions)
+    file = yaml.load(file, Loader=SafeLineLoader)  # nosec
+    for actions in list(jsonpath_expr.find(file)):
+        match = re.match(GITHUB_ACTIONS_PATTERN, actions.value)
         if match:
             actions_metadata = match.groupdict()
             github_actions.append(
@@ -40,6 +55,7 @@ def find_gitub_actions_in_workflow(file: IO) -> List[GithubActions]:
                     owner=actions_metadata["owner"],
                     repository=actions_metadata["repository"],
                     reference=actions_metadata["reference"],
+                    line=actions.context.value["line"],
                 )
             )
 
@@ -53,18 +69,24 @@ def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bo
             continue
 
         if f"{github_actions.name}" not in allowed_actions.keys():
-            print(f"ERROR {file.name}: Actions {github_actions.name} forbidden")
+            print(
+                f"::error file={file.name},line={github_actions.line}::"
+                f"Actions {github_actions.name} forbidden"
+            )
             is_valid = False
         elif not re.match(SHA1_PATTERN, github_actions.reference):
             print(
-                f"ERROR {file.name}: Actions {github_actions.name} must follow "
+                f"::error file={file.name},line={github_actions.line}::"
+                f"Actions {github_actions.name} must follow "
                 f"'actions_name@sha1  # github_tag' format."
             )
             is_valid = False
         elif github_actions.reference != allowed_actions[github_actions.name]:
             print(
-                f"ERROR {file.name}: Version {github_actions.reference} forbidden, "
-                f"instead you must use {allowed_actions[github_actions.name]}."
+                f"::error file={file.name},line={github_actions.line}::"
+                f"Version {github_actions.reference} forbidden for Actions {github_actions.name}, "
+                f"instead you must use "
+                f"{github_actions.name}@{allowed_actions[github_actions.name]}."
             )
             is_valid = False
 
