@@ -95,7 +95,9 @@ def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bo
 
 def load_allowed_actions() -> Mapping[str, str]:
     with open(
-        f"{os.environ['GITHUB_ACTION_PATH']}/ALLOWED_ACTIONS.yaml", mode="r"
+        f"{os.environ['GITHUB_ACTION_PATH']}/ALLOWED_ACTIONS.yaml",
+        mode="r",
+        encoding="utf-8",
     ) as file:
         return yaml.safe_load(file)
 
@@ -105,7 +107,7 @@ def main() -> None:
     allowed_actions = load_allowed_actions()
     for extension in ("yaml", "yml"):
         for entry in glob.glob(f".github/workflows/**/*.{extension}", recursive=True):
-            with open(entry, mode="r") as file:
+            with open(entry, mode="r", encoding="utf-8") as file:
                 executions.append(is_github_workflow_valid(file, allowed_actions))
 
     sys.exit(not all(executions))

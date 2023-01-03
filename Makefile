@@ -12,7 +12,7 @@ sync: venv
 	pip-sync dev-requirements.txt
 
 venv:
-	python3.7 -m venv venv
+	python3.10 -m venv venv
 	pip install --quiet --upgrade pip
 	pip install --quiet pip-tools
 
