@@ -1,0 +1,11 @@
+extends: default
+rules:
+  comments: disable
+  line-length:
+    max: 120
+    level: warning
+  document-start: disable
+  indentation:
+    spaces: 2
+    indent-sequences: true
+  key-ordering: {}
