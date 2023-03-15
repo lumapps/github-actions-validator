@@ -5,6 +5,7 @@ MeilCli/slack-upload-file: fc3d207751bff0393a4e2dd5ecca7ac3eea9b309  # v2.1.2
 ad-m/github-push-action: 40bf560936a8022e68a3c00e7d2abefaf01305a6  # v0.6.0
 andymckay/cancel-action: 8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8  # 0.2
 archive/github-actions-slack: 4dc5ae7261db84cd53ed06b4731a0ec776e856d9  # v2.2.1
+archive/github-actions-slack: 9ccf59ff2579a8d72da350ef248629f2946ba6b2  # v2.6.0
 benjlevesque/short-sha: 56c9032868f85fc82058ff0793e58ab97bb2b856  # v1.2
 chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
