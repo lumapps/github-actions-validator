@@ -62,7 +62,9 @@ def find_gitub_actions_in_workflow(file: IO) -> List[GithubActions]:
     return github_actions
 
 
-def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bool:
+def is_github_workflow_valid(
+    file: IO, allowed_actions: Mapping[str, List[str]]
+) -> bool:
     is_valid = True
     for github_actions in find_gitub_actions_in_workflow(file):
         if github_actions.owner in ALLOWED_ORGANIZATIONS:
@@ -81,19 +83,25 @@ def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bo
                 f"'actions_name@sha1  # github_tag' format."
             )
             is_valid = False
-        elif github_actions.reference != allowed_actions[github_actions.name]:
+        elif github_actions.reference not in allowed_actions[github_actions.name]:
+            allowed_actions_display_list = ", ".join(
+                [
+                    f"{github_actions.name}@{version}"
+                    for version in allowed_actions[github_actions.name]
+                ]
+            )
             print(
                 f"::error file={file.name},line={github_actions.line}::"
                 f"Version {github_actions.reference} forbidden for Actions {github_actions.name}, "
-                f"instead you must use "
-                f"{github_actions.name}@{allowed_actions[github_actions.name]}."
+                f"instead you can use one of: "
+                f"{allowed_actions_display_list}."
             )
             is_valid = False
 
     return is_valid
 
 
-def load_allowed_actions() -> Mapping[str, str]:
+def load_allowed_actions() -> Mapping[str, List[str]]:
     with open(
         f"{os.environ['GITHUB_ACTION_PATH']}/ALLOWED_ACTIONS.yaml",
         mode="r",
