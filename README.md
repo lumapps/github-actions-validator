@@ -37,6 +37,6 @@ jobs:
     name: Github-actions-validator
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: lumapps/github-actions-validator@master
+    - uses: actions/checkout@v3
+    - uses: lumapps/github-actions-validator@vX
 ```
