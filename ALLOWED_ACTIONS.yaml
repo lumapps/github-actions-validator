@@ -33,6 +33,7 @@ ncipollo/release-action: a2e71bdd4e7dab70ca26a852f29600c98b33153e  # 1.12.0
 peaceiris/actions-gh-pages: 068dc23d9710f1ba62e86896f84735d869951305  # v3.8.0
 peter-evans/create-or-update-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
 peter-evans/repository-dispatch: ce5485de42c9b2622d2ed064be479e8ed65e76f4  # v1.1.3
+pnpm/action-setup: c3b53f6a16e57305370b4ae5a540c2077a1d50dd  # v2.2.4
 pratikmallya/autolabeler-codeowners: cca9694441f25116fcb5d5f16757a6e43e5c4375  # 0.1
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
