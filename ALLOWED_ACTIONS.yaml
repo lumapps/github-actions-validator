@@ -11,8 +11,8 @@ cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
 codecov/codecov-action: f32b3a3741e1053eb607407145bc9619351dc93b  # v2.1.0
 cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
 de-vri-es/setup-git-credentials: 162b9dfe472513ee2960f0c97dd3cbbe80319b68  # v2.0.10
-docker/build-push-action: c56af957549030174b10d6867f20e78cfd7debc5 # v3.2.0
-docker/login-action: f4ef78c080cd8ba55a85445d5b36e214a81df20a  # v2.1.0
+docker/build-push-action: a66e35b9cbcf4ad0ea91ffcaf7bbad63ad9e0229 # v2
+docker/login-action: 28218f9b04b4f3f62068d7b6ce6ca5b26e35336c  # v1.9.0
 docker/metadata-action: f206c36955d3cc6213c38fb3747d9ba4113e686a  # v4.0.0
 docker/setup-buildx-action: 8c0edbc76e98fa90f69d9a2c020dcb50019dc325  # v2.2.1
 dorny/paths-filter: 4512585405083f25c027a35db413c2b3b9006d50  #2.11.1
@@ -33,7 +33,6 @@ mi-kas/kover-report: aedeaa4ded293f77eecaafc4a213d627b6b97894  # v1.7
 ncipollo/release-action: a2e71bdd4e7dab70ca26a852f29600c98b33153e  # 1.12.0
 peaceiris/actions-gh-pages: 068dc23d9710f1ba62e86896f84735d869951305  # v3.8.0
 peter-evans/create-or-update-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
-peter-evans/find-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
 peter-evans/repository-dispatch: ce5485de42c9b2622d2ed064be479e8ed65e76f4  # v1.1.3
 pnpm/action-setup: c3b53f6a16e57305370b4ae5a540c2077a1d50dd  # v2.2.4
 pratikmallya/autolabeler-codeowners: cca9694441f25116fcb5d5f16757a6e43e5c4375  # 0.1
