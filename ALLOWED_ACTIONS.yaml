@@ -28,7 +28,7 @@ kanga333/comment-hider: c12bb20b48aeb8fc098e35967de8d4f8018fffdf  # v0.4.0
 khan/pull-request-comment-trigger: af6260d48c05e1f2f1641f9d14794bd04687c023  # 1.0.0
 marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888  # v2.1.0
 mathieudutour/github-tag-action: fcfbdceb3093f6d85a3b194740f8c6cec632f4e2  # v6.1
-mdgreenwald/mozilla-sops-action: 7e45e21d7d26babb32110400a222048e0701d162  # v1.4.1
+mdgreenwald/mozilla-sops-action: d9714e521cbaecdae64a89d2fdd576dd2aa97056  # v1.6.0
 mi-kas/kover-report: aedeaa4ded293f77eecaafc4a213d627b6b97894  # v1.7
 mobile-dev-inc/action-maestro-cloud: c974d6dd20ca0a4162b8cb0e00895bd043ad376f # v1.8.1
 ncipollo/release-action: a2e71bdd4e7dab70ca26a852f29600c98b33153e  # 1.12.0
@@ -43,6 +43,6 @@ repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
 snok/install-poetry: 5e4414407e59f94f2148bcb253917dfc22dee7d9  # v1.3.0
 thomaseizinger/create-pull-request: 708b87f1bf8075327bd126082bb2430020bab194  # 1.0.0
 uesteibar/reviewer-lottery: 5531ef7fe55d814c8f8fbab12de4ff74d15b41ed  # v2
-webfactory/ssh-agent: 836c84ec59a0e7bc0eabc79988384eb567561ee2  # v7.0.0
+webfactory/ssh-agent: dc588b651fe13675774614f8e6a936a468676387 # v0.9.0
 wzieba/Firebase-Distribution-Github-Action: d6e3b20d53da54e1ffd2082a8132e120b5bd1bb2  # v1.3.2
 xt0rted/pull-request-comment-branch: f2f07162618551540507cbd00ddf16ffcaa0c72f  # v1.3.0
