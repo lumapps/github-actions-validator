@@ -42,6 +42,7 @@ pratikmallya/autolabeler-codeowners: cca9694441f25116fcb5d5f16757a6e43e5c4375  #
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
 snok/install-poetry: 5e4414407e59f94f2148bcb253917dfc22dee7d9  # v1.3.0
+subosito/flutter-action: 44ac965b96f18d999802d4b807e3256d5a3f9fa1 # v2.16.0
 thomaseizinger/create-pull-request: 708b87f1bf8075327bd126082bb2430020bab194  # 1.0.0
 uesteibar/reviewer-lottery: 5531ef7fe55d814c8f8fbab12de4ff74d15b41ed  # v2
 webfactory/ssh-agent: dc588b651fe13675774614f8e6a936a468676387 # v0.9.0
