@@ -5,6 +5,7 @@ MeilCli/slack-upload-file: fc3d207751bff0393a4e2dd5ecca7ac3eea9b309  # v2.1.2
 ad-m/github-push-action: 40bf560936a8022e68a3c00e7d2abefaf01305a6  # v0.6.0
 andymckay/cancel-action: 8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8  # 0.2
 archive/github-actions-slack: 9ccf59ff2579a8d72da350ef248629f2946ba6b2  # v2.6.0
+astral-sh/setup-uv: b5f58b2abc5763ade55e4e9d0fe52cd1ff7979ca  # v5.2.1
 benjlevesque/short-sha: 56c9032868f85fc82058ff0793e58ab97bb2b856  # v1.2
 chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
@@ -31,7 +32,7 @@ marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888
 mathieudutour/github-tag-action: fcfbdceb3093f6d85a3b194740f8c6cec632f4e2  # v6.1
 mdgreenwald/mozilla-sops-action: d9714e521cbaecdae64a89d2fdd576dd2aa97056  # v1.6.0
 mi-kas/kover-report: aedeaa4ded293f77eecaafc4a213d627b6b97894  # v1.7
-mobile-dev-inc/action-maestro-cloud: c974d6dd20ca0a4162b8cb0e00895bd043ad376f # v1.8.1
+mobile-dev-inc/action-maestro-cloud: aa773c5b308aa8e4ea4912b6c13000b575e22749 # v1.9.6
 ncipollo/release-action: a2e71bdd4e7dab70ca26a852f29600c98b33153e  # 1.12.0
 peaceiris/actions-gh-pages: 068dc23d9710f1ba62e86896f84735d869951305  # v3.8.0
 peter-evans/create-or-update-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
@@ -42,6 +43,7 @@ pratikmallya/autolabeler-codeowners: cca9694441f25116fcb5d5f16757a6e43e5c4375  #
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
 snok/install-poetry: 5e4414407e59f94f2148bcb253917dfc22dee7d9  # v1.3.0
+softprops/action-gh-release: c95fe1489396fe8a9eb87c0abf8aa5b2ef267fda  # v2.2.1
 subosito/flutter-action: 44ac965b96f18d999802d4b807e3256d5a3f9fa1 # v2.16.0
 thomaseizinger/create-pull-request: 708b87f1bf8075327bd126082bb2430020bab194  # 1.0.0
 uesteibar/reviewer-lottery: 5531ef7fe55d814c8f8fbab12de4ff74d15b41ed  # v2
