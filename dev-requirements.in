@@ -1,5 +1,7 @@
 black
 isort
+mypy
 pre-commit
 pylint
 pytest
+types-PyYAML
