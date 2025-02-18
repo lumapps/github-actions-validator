@@ -3,9 +3,9 @@ import glob
 import os
 import re
 import sys
+from collections.abc import Hashable, Mapping
 from dataclasses import dataclass, field
 from typing import IO
-from collections.abc import Hashable, Mapping
 
 import yaml
 from jsonpath_ng import parse
