@@ -3,8 +3,9 @@ import glob
 import os
 import re
 import sys
+from collections.abc import Hashable, Mapping
 from dataclasses import dataclass, field
-from typing import IO, Dict, Hashable, List, Mapping
+from typing import IO
 
 import yaml
 from jsonpath_ng import parse
@@ -15,7 +16,7 @@ from yaml.loader import SafeLoader
 class SafeLineLoader(SafeLoader):
     def construct_mapping(
         self, node: MappingNode, deep: bool = False
-    ) -> Dict[Hashable, None]:
+    ) -> dict[Hashable, None]:
         mapping = super().construct_mapping(node, deep=deep)
         # Add 1 so line numbering starts at 1
         mapping["line"] = node.start_mark.line + 1
@@ -42,7 +43,7 @@ class GithubActions:
         self.name = f"{self.owner}/{self.repository}"
 
 
-def find_gitub_actions_in_workflow(file: IO) -> List[GithubActions]:
+def find_gitub_actions_in_workflow(file: IO) -> list[GithubActions]:
     github_actions = []
     jsonpath_expr = parse("jobs.*.steps[*].uses")
     file = yaml.load(file, Loader=SafeLineLoader)  # nosec
@@ -96,7 +97,6 @@ def is_github_workflow_valid(file: IO, allowed_actions: Mapping[str, str]) -> bo
 def load_allowed_actions() -> Mapping[str, str]:
     with open(
         f"{os.environ['GITHUB_ACTION_PATH']}/ALLOWED_ACTIONS.yaml",
-        mode="r",
         encoding="utf-8",
     ) as file:
         return yaml.safe_load(file)
@@ -107,7 +107,7 @@ def main() -> None:
     allowed_actions = load_allowed_actions()
     for extension in ("yaml", "yml"):
         for entry in glob.glob(f".github/workflows/**/*.{extension}", recursive=True):
-            with open(entry, mode="r", encoding="utf-8") as file:
+            with open(entry, encoding="utf-8") as file:
                 executions.append(is_github_workflow_valid(file, allowed_actions))
 
     sys.exit(not all(executions))

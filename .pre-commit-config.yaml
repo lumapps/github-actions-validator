@@ -2,13 +2,13 @@
 # See https://pre-commit.com/hooks.html for more hooks
 ---
 default_language_version:
-  python: python3.10
+  python: python3.12
 
 default_stages: [commit]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.4.0
+    rev: v5.0.0
     hooks:
     - id: trailing-whitespace
       exclude: .github/CODEOWNERS
@@ -35,13 +35,6 @@ repos:
     hooks:
       - id: check-useless-excludes
 
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: d6e31ae  # v0.782
-    hooks:
-      - id: mypy
-        args: [--config=./setup.cfg]
-        types: ["python"]
-
   - repo: local
     hooks:
       - id: black
@@ -55,6 +48,14 @@ repos:
         language: system
         entry: venv/bin/isort --check-only --diff
         types: ["python"]
+
+      - id: mypy
+        name: mypy
+        language: system
+        entry: venv/bin/mypy
+        require_serial: true
+        files: src/
+        types: [ "python" ]
 
       - id: pylint
         name: pylint

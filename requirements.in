@@ -1,2 +1,2 @@
-PyYAML
+PyYAML>=6.0.1
 jsonpath-ng
