@@ -40,7 +40,7 @@ peter-evans/find-comment: a54c31d7fa095754bfef525c0c8e5e5674c4b4b1  # v2.4.0
 peter-evans/repository-dispatch: ce5485de42c9b2622d2ed064be479e8ed65e76f4  # v1.1.3
 pnpm/action-setup: fe02b34f77f8bc703788d5817da081398fad5dd2  # v3.0.0
 pratikmallya/autolabeler-codeowners: cca9694441f25116fcb5d5f16757a6e43e5c4375  # 0.1
-qodo-ai/pr-agent: be1dd4bd202135034de738690db2ccfc3b1a3417 # commit from 6/02/2025
+qodo-ai/pr-agent: 29a350b4f81e0168d3427f74e3afda0d2a195f55 # commit from 18/02/2025
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
 snok/install-poetry: 5e4414407e59f94f2148bcb253917dfc22dee7d9  # v1.3.0
