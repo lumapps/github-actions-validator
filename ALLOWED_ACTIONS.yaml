@@ -32,7 +32,7 @@ marocchino/sticky-pull-request-comment: 322a2451dae6c7831d1a8b931275a7f78147c888
 mathieudutour/github-tag-action: fcfbdceb3093f6d85a3b194740f8c6cec632f4e2  # v6.1
 mdgreenwald/mozilla-sops-action: d9714e521cbaecdae64a89d2fdd576dd2aa97056  # v1.6.0
 mi-kas/kover-report: aedeaa4ded293f77eecaafc4a213d627b6b97894  # v1.7
-mobile-dev-inc/action-maestro-cloud: aa773c5b308aa8e4ea4912b6c13000b575e22749 # v1.9.6
+mobile-dev-inc/action-maestro-cloud: 80d8a65d8ab808cadbafffd8755ffb7e8e26dc77 # v1.9.8
 ncipollo/release-action: a2e71bdd4e7dab70ca26a852f29600c98b33153e  # 1.12.0
 peaceiris/actions-gh-pages: 068dc23d9710f1ba62e86896f84735d869951305  # v3.8.0
 peter-evans/create-or-update-comment: a35cf36e5301d70b76f316e867e7788a55a31dae  # v1.4.5
