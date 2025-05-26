@@ -18,7 +18,7 @@ docker/metadata-action: f206c36955d3cc6213c38fb3747d9ba4113e686a  # v4.0.0
 docker/setup-buildx-action: 8c0edbc76e98fa90f69d9a2c020dcb50019dc325  # v2.2.1
 dorny/paths-filter: 4512585405083f25c027a35db413c2b3b9006d50  #2.11.1
 ffurrer2/extract-release-notes: 72ce6a57083368f4a785f875a52eb972255823fc  # v1.7.0
-fkirc/skip-duplicate-actions: f75dd6564bb646f95277dc8c3b80612e46a4a1ea  # v3.4.1
+fkirc/skip-duplicate-actions: 04a1aebece824b56e6ad6a401d015479cd1c50b3  # commit from 8/10/2024 (v5)
 fusion-engineering/setup-git-credentials: 1ffa9266dc7fa821d6419a2b6484d8688b42814d  # v2.0.6
 golangci/golangci-lint-action: aaa42aa0628b4ae2578232a66b541047968fac86   # v6
 google-github-actions/auth: 71fee32a0bb7e97b4d33d548e7d957010649d8fa  # v2.1.3
