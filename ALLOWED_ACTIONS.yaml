@@ -11,6 +11,7 @@ chromaui/action: 3f82bf5d065290658af8add6dce946809ee0f923  # v6.1.0
 cirrus-actions/rebase: c473b716e3fcde0c6bf67416e2c2882830ad40f6  # 1.5
 codecov/codecov-action: f32b3a3741e1053eb607407145bc9619351dc93b  # v2.1.0
 cypress-io/github-action: 6b3bc3a1c27198cda160cb03307c43bc998aa564  # v2.11.0
+dawidd6/action-download-artifact: 07ab29fd4a977ae4d2b275087cf67563dfdf0295  # v9
 de-vri-es/setup-git-credentials: 162b9dfe472513ee2960f0c97dd3cbbe80319b68  # v2.0.10
 docker/build-push-action: 471d1dc4e07e5cdedd4c2171150001c434f0b7a4  # v6.15.0
 docker/login-action: f4ef78c080cd8ba55a85445d5b36e214a81df20a  # v2.1.0
