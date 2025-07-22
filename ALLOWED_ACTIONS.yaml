@@ -4,6 +4,7 @@ Ilshidur/action-slack: 689ad44a9c9092315abd286d0e3a9a74d31ab78a  # 2.1.0
 MeilCli/slack-upload-file: fc3d207751bff0393a4e2dd5ecca7ac3eea9b309  # v2.1.2
 ad-m/github-push-action: 40bf560936a8022e68a3c00e7d2abefaf01305a6  # v0.6.0
 andymckay/cancel-action: 8f8510d9dea52fcc8eb6ca10d6ce47fd5fc43cd8  # 0.2
+ankane/setup-postgres: d20163d8b8e1a1193065ce7e510b9937f64c79b5  # v1
 archive/github-actions-slack: 9ccf59ff2579a8d72da350ef248629f2946ba6b2  # v2.6.0
 astral-sh/setup-uv: b5f58b2abc5763ade55e4e9d0fe52cd1ff7979ca  # v5.2.1
 benjlevesque/short-sha: 56c9032868f85fc82058ff0793e58ab97bb2b856  # v1.2
