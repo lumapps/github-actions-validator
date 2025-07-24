@@ -46,6 +46,7 @@ qodo-ai/pr-agent: 29a350b4f81e0168d3427f74e3afda0d2a195f55 # commit from 18/02/2
 r0adkll/upload-google-play: 9745ef904e395471bca5696056a6ce8a60d18cf8  # v1.0.15
 repo-sync/pull-request: 7e4bc12dc74ac246e40a90bb7ec609dc236c3c15  # v2.11
 shivammathur/setup-php: cf4cade2721270509d5b1c766ab3549210a39a2a  # 2.33.0
+slackapi/slack-github-action: 91efab103c0de0a537f72a35f6b8cda0ee76bf0a  # v2.1.1
 snok/install-poetry: 5e4414407e59f94f2148bcb253917dfc22dee7d9  # v1.3.0
 softprops/action-gh-release: c95fe1489396fe8a9eb87c0abf8aa5b2ef267fda  # v2.2.1
 subosito/flutter-action: 44ac965b96f18d999802d4b807e3256d5a3f9fa1 # v2.16.0
